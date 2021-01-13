@@ -1,0 +1,122 @@
+/**
+ * OVERVIEW
+ *
+ * The project is divided into separate style sheets:
+ *
+ * bootstrap.css............CSS rules that control the layout of the website.
+ * base.css..............Global rules and helpers.
+ * components.css........The CSS of components that build up the site.
+ */
+
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * SETTINGS
+ * Variables............Globally-available variables.
+ * Base font-size.......Declaration of the base font-size.
+ * Margins..............Global values of top and bottom margins.
+ *
+ * TYPOGRAPHY
+ * Headings, links and buttons............Typography styles.
+ */
+
+
+
+
+
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+  --primary-color:           #F33636;
+  --secondary-color:         #C4C4C4;
+  --hover-color:             #b80a0a;
+  --primary-font-color:      #000000;
+  --secondary-font-color:    #ffffff;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SETTINGS
+\*------------------------------------*/
+
+
+
+h1, h3 {
+  margin: 1.5rem 0 1rem;
+}
+
+h2 { margin-top: 1.5rem; }
+
+
+@media (min-width: 768px) {
+  
+  h2 {margin: 2rem 0;}
+
+}
+
+
+
+
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
+
+body {
+  font-family: 'Spartan', sans-serif;
+  color:        var(--font-color);
+  text-align:   center;
+}
+
+
+@media (min-width: 768px) {
+  
+  .video-section,
+  .about-section__content,
+  .contact-section {
+    text-align: left;
+  }
+  
+}
+
+h1, h2, h3 {
+  font-family:   'Libre Baskerville', serif;
+}
+
+h1 { font-size:      5vw; }
+
+h2 { font-size:      1.25rem; }
+
+h3 { font-size:      1rem; }
+
+p, a  { font-size:   .75rem; }
+
+a { 
+  font-weight:   bold; 
+  color:         var(--secondary-font-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+
+@media (min-width: 768px) {
+
+  h1 { font-size:  3.125rem; }
+
+  h2 { font-size:  1.875rem; }
+
+  h3 { font-size:  1.2rem; }
+
+  p, a { font-size:   .875rem; }
+
+}

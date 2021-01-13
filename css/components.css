@@ -1,0 +1,308 @@
+/**
+ * OVERVIEW
+ *
+ * This file describes the components that build up the site.
+ * From the inner layout to the font color, etc.
+ *
+ */
+
+
+ /**
+ * TABLE OF CONTENTS
+ *
+ * 1. BUTTONS
+ *
+ * 2. DIVIDERS
+ *
+ * 3. NAVIGATION
+ *
+ * 4. CAROUSEL
+ *
+ * 5. SERVICE SECTION
+ *
+ * 6. VIDEO SECTION
+ *
+ * 7. ABOUT SECTION
+ *
+ * 8. PORTFOLIO
+ *
+ * 9. CONTACT SECTION
+ *
+ * 10. FOOTER
+ */
+
+
+
+
+
+ 
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+.button {
+  display: inline-block;
+  width: 5rem;
+  padding: .5rem .4rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+  .button--primary {
+    background-color: var(--primary-color);
+    transition: background-color .2s ease-in;
+  }
+
+  .button--primary:hover {
+    background-color: var(--hover-color);
+  }
+
+
+@media (min-width: 768px) {
+
+  .button {
+    width:         7.625rem;
+    padding:       .687rem 1.0625rem;
+  }
+
+}
+
+
+
+
+/*------------------------------------*\
+  #DIVIDER 
+\*------------------------------------*/
+
+.divider::after {
+  display: block;
+  content: "";
+  height: 3px;;
+  width: 15vw;
+  margin: .5rem auto 1.5rem;
+  background-color: var(--primary-color);
+  }
+
+
+@media (min-width: 768px) {
+  .divider::after {
+    display: none;
+  }
+}
+
+
+/*------------------------------------*\
+   #NAVIGATION
+\*------------------------------------*/
+  
+nav {
+  transition: background-color 0.2s ease;
+  background-color: var(--primary-color);
+}
+  
+  
+  .navbar-scrolled {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: var(--primary-color);
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.8);
+  }
+  
+  
+@media (min-width: 768px) {
+
+  nav {
+    background-color: transparent;
+  }
+
+  nav ul li {
+    padding: 0 1.5rem;
+  }
+
+  nav ul li:last-child {
+    padding-right: 0;
+  }
+  
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #CAROUSEL
+\*------------------------------------*/
+.carousel {
+  margin-top: 57px;
+}
+  
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+  
+  .carousel-item img { min-height:300px; object-fit: cover; }
+  
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+  }
+  
+  
+@media (min-width: 768px) {
+  
+  .carousel {
+    margin-top: 0;
+  }
+  
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SERVICES SECTION
+\*------------------------------------*/
+ 
+.services-section {
+  margin-bottom: 2rem;
+}
+
+  .services-section img {
+    width: 25%;
+  }
+  
+  
+@media (min-width: 768px) {
+  
+  .services-section img {
+    width: auto;
+  }
+    
+}
+
+
+
+
+
+/*------------------------------------*\
+   #VIDEO SECTION
+\*------------------------------------*/
+  
+.video-section {
+  background-color: var(--primary-color);
+  color: var(--secondary-font-color);
+}
+  
+  
+  .video-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .video-section__video-container {
+    width: 95%;
+    margin: 1.5rem auto;
+  }
+
+
+
+
+
+/*------------------------------------*\
+  #PORTFOLIO SECTION
+\*------------------------------------*/
+
+.portfolio-section {
+  margin-top: 5rem;
+}
+  
+
+
+
+
+
+
+/*------------------------------------*\
+  #ABOUT SECTION
+\*------------------------------------*/
+  
+.about-section img {
+  display: none;
+}
+  
+  
+@media (min-width: 768px) {
+  
+  .about-section img {
+    display: inline-block;
+  }
+    
+  .about-section::after {
+    display: none;
+  }
+  
+}
+
+
+
+
+
+/*------------------------------------*\
+  #CONTACT SECTION
+\*------------------------------------*/
+  
+.contact-section {
+  background-color: var(--secondary-color);
+  padding-top: 2rem;
+}
+  
+  .contact-form__input-field {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 0 .75rem .875rem;
+    border: 0;
+    border-bottom: 2px solid;
+    border-color: transparent;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  
+  .contact-form__input-field:focus { border-bottom-color: var(--primary-color); }
+  
+  .contact-form__input-field::placeholder { 
+    font-weight: bold;
+    font-size:    .75rem;
+  }
+
+
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-font-color);
+  padding: 1rem 0;
+}
+  small {
+    font-size: 60%;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .facebook-icon {
+    padding-right: 1rem; 
+  }
